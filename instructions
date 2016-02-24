@@ -1,0 +1,27 @@
+Duplicate Detection of Python Files
+
+Attached in this link, you will find a zipped version of the source files of
+Assignment 1 submitted by your classmates. Each of these assignments has been
+crudely anonymized so you may or may not recognize yours (resist from trying to
+figure it out). Your task is to create a Linux script to do a pairwise
+comparison of all the Python files. The goal is to produce a ranked list of
+pairwise assignment pairs such that the first pair of python files is the most
+similar and the last pair of python files is the least similar.
+
+To compute similarity, use the Linux diff command. As you know, this command
+lets you compare two files for textual similarity. Review the capability of
+this tool and define your own approach for comparing similar documents. You can
+use word, space, line or other comparisons types. You can break ties
+arbitrarily, be careful with Unicode characters across comparisons.
+
+Just describe your approach and assumptions in your README file. Also include
+directions to for reproduction. Also give the output ranking that you obtain
+from your script.
+
+Hint, you may have to use multiple scripts. Feel free to use Python in your
+script to help with your solution.
+
+Some information needed was glossed over in the review and remediation section.
+Feel free to use the discussion board to bounce ideas off of classmates to
+accomplish the task.
+
