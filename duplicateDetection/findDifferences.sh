@@ -14,10 +14,10 @@ loc_totdiff=0
 
 # Go through all the files pairwise and find 
 # the number of differences between them
-echo -e "First file\tSecond file\tDifferences"
+echo -e "First file\t\t\tSecond file\t\t\tDifferences"
 
-for filename1 in *.py; do
-    for filename2 in *.py; do
+for filename1 in ./python-submissions/*.py; do
+    for filename2 in ./python-submissions/*.py; do
 
         # If they are the same files, skip the comparison.
         if [ "$filename1" == "$filename2" ]; then
@@ -32,6 +32,6 @@ for filename1 in *.py; do
         loc_totdiff=$((loc_inserts+loc_deletes))
 
         # Print the file names along with differences.
-        echo -e "${filename1}\t\t${filename2}\t\t${loc_totdiff}"
+        echo -e "${filename1}\t${filename2}\t${loc_totdiff}"
     done
 done | sort -t$'\t' -nk5 -nk1 -nk3 # Sort the output according to the number of differences.
